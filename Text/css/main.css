@@ -71,7 +71,7 @@ li::before {
     content: "";
     width: 110px;
     height: 110px;
-    background-image: url("../images/temp_left-removebg-preview.png");
+    background-image: url("../images/two-stars.png");
     background-size: cover;
     position: absolute;
     left: -50px;
@@ -82,7 +82,7 @@ li::before {
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("../images/temp_left-removebg-preview.png");
+    background-image: url("../images/two-stars.png");
     background-size: cover;
     position: absolute;
     right: 50px;
