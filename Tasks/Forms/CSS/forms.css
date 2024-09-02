@@ -1,56 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+One&display=swap');
+
+
 body {
     margin: 0;
-    font-family: Fraunces;
+    font-family: 'Open sans', sans-serif;
     font-weight: 400;
     line-height: 78.91px;
-    background-image: url('wallpaper.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
 }
 
-.header {
-    width: 100%;
-    background-color: rgba(74, 57, 95, 0.95);
-    padding: 20px 0px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 64px;
-}
-
 .contact-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 60px);
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: hwb(0 12% 88%);
+}
+
+.form-container {
+    background: rgb(77, 77, 77, 0.28);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 579px;
+    max-height: 489px;
+}
+
+.form-container {
+    margin-right: 20px;
+}
+
+.get-in-touch-container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    max-width: 600px;
-    background: rgba(255, 255, 255, 0);
-    padding: 20px;
-    border-radius: 10px;
+}
+
+.get-in.touch{
+    width: 35%;
+    padding-left: 10px;
+    margin-left: 20px;
+    color: white;
+    background-color: blue;
+}
+
+.get-in-touch h2 {
+    margin-top: 0px;
+    margin-bottom: -20px;
+    font-size: 50px;
+    font-family: 'Rubik One', sans-serif;
+    font-weight: lighter;
+}
+
+.get-in-touch p {
+    font-size: 26px;
+    line-height: 35.41px;
+    font-family: 'open sans', sans-serif;
+    font-weight: lighter;
+}
+
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 20px
+}
+
+.name-fields input {
+    width: 48%;
 }
 
 .contact-form input, .contact-form textarea {
-    width: 576px;
+    width: 100%;
+    font-family: sans-serif;
     margin-bottom: 10px;
     padding: 15px;
     border: none;
     border-radius: 13px;
     background: #DCDADA;
     color: #333;
+    width: 95%;
     font-size: 16px;
 }
 
@@ -59,25 +99,54 @@ body {
 }
 
 .contact-form textarea {
-    height: 205px;
+    height: 120px ;
+    width: 95%;
     resize: none;
 }
 
 .contact-form button {
-    padding: 10px 24px;
+    padding: 22px, 48px, 22px, 48px;
     border: none;
     width: 149px;
     height: 50px;
     gap: 8px;
-    border-radius: 30px;
-    background-color: rgb(74, 57, 95);
+    border-radius: 15px;
+    background: linear-gradient(270deg, #0066CC -9.64%, #A061B5 158.23%);
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .contact-form button:hover {
     background-color: rgb(74, 57, 150);
+}
+
+.get-in-touch .social-icons {
+    margin-top: -20px;
+}
+
+.icon-text-pair{
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.icon-text-pair img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.icon-text-pair a, .icon-text-pair p {
+    font-family: 'Open sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icon-text-pair a:hover {
+    color: blue;
+    text-decoration: underline;
 }
