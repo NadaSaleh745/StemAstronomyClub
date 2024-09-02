@@ -1,0 +1,120 @@
+body{
+    margin: 0 0 0 0;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 64px;
+    background: red;
+    background: linear-gradient(270.33deg, rgba(0, 102, 204, 0.7) -7.42%, rgba(160, 97, 181, 0.7) 118.81%);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    margin-left: 130px;
+    margin-top: -58px;
+}
+
+.rightSec{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    margin-left: 470px;
+    margin-right: 110px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-width: 0;
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 29.96px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+.hero {
+    width: 976px;
+    height: 417px;
+    margin-top: 246px;
+    margin-left: 232px;
+}
+
+
+.h1{
+    width: 976px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 67px;
+}
+
+.h2{
+    width: 779px;
+    height: 80px;
+    margin-top: 18px;
+    margin-left: 97px;
+    display: flex;
+    justify-content: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 32.68px;
+    text-align: center;
+    color: #DADCE4;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    margin-top: 70px;
+    margin-left: 193px;
+}
+
+.joinUS, .seeActs{
+    width: 280px;
+    height: 77px;
+    font-family: Open Sans, sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    line-height: 38.13px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.joinUS{
+    background: linear-gradient(270deg, #0066CC -9.64%, #A061B5 158.23%);
+    border-width: 0;
+    border-radius: 15px;
+}
+
+.seeActs {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    border-image: linear-gradient(90deg, #A061B5 0%, #F7F9FF 48.28%, #0066CC 100%);
+    border-image-slice: 1;
+    background-color: transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+
+
