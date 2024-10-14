@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+One&display=swap');
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-color: #1E1E1E;
+}
+
+.competition-section {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 1180px;
+    height: 500px;
+    margin: 0 auto;
+    background: #4D4D4D47;
+}
+
+.competition-section h2 {
+    font-family: 'Rubik One', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62.5px;
+    margin-bottom: 20px;
+}
+
+.competition-text {
+    max-width: 780px;
+    max-height: 132px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px; /* This adds space below the text to prevent buttons from hiding it */
+}
+
+.competition-section .competition-text p {
+    font-family: 'Open sans', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 32.68px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.participate, .learnMore {
+    width: 280px;
+    height: 77px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    line-height: 38.13px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.participate {
+    background: linear-gradient(270deg, #0066CC -9.64%, #A061B5 158.23%);
+    border-width: 0;
+    border-radius: 15px;
+    color: white;
+}
+
+.learnMore {
+    border-radius: 15px;
+    border: 3px solid;
+    border-image-source: linear-gradient(90deg, #A061B5 0%, #F7F9FF 48.28%, #0066CC 100%);
+    background-image: linear-gradient(#1E1E1E, #1E1E1E), linear-gradient(90deg, #A061B5 0%, #F7F9FF 48.28%, #0066CC 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: white;
+    background-color: transparent;
+    border-width: 3px;
+}
+
+a.gradient-link {
+    background: linear-gradient(180deg, #E28CFF 0%, #42A0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    background-clip: text;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a.gradient-link:hover {
+    background: linear-gradient(180deg, #42A0FF 82.12%, #E28CFF 95.76%); /* Reverse gradient on hover */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
