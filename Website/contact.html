@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,21 +15,29 @@
   </head>
   <body>
 
-    <div class="back">
+    <div class="back" id="back">
       <div class="nav sizer">
-        <div class="logo">
+        <div class="logo" id="logo">
           <img src="images/club-logo.png" alt="">
         </div>
         <div class="rightSec">
-          <button class="links">Home</button>
-          <button class="links">Team</button>
-          <button class="links">Competition</button>
-          <button class="links">Contact</button>
-          <div class="list">
+          <a href="home.html" class="links">Home</a>
+          <a href="team.html" class="links">Team</a>
+          <a href="activities.html" class="links">Activities</a>
+          <a href="competition.html" class="links">Competition</a>
+          <a href="contact.html" class="links">Contact</a>
+          <button class="list" id="list">
             <img src="images/burger-menu-svgrepo-com.svg" alt="">
-          </div>
+          </button>
         </div>
       </div>
+    </div>
+    <div class="menu" id="menu">
+      <a href="home.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="activities.html">Activities</a>
+      <a href="competition.html">Competition</a>
+      <a href="contact.html">Contact</a>
     </div>
     
 
@@ -36,21 +45,7 @@
     
     <h1 class="big">Contact Us</h1>
 
-    <div class="contact-container sizer">
-        <div class="form-container">
-            <form class="contact-form">
-                <div class="name-fields">
-                    <input type="text" name="first-name" placeholder="First Name" required>
-                    <input type="text" name="last-name" placeholder="Last Name" required>
-                </div>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="subject" name="subject" placeholder="Subject" required>
-                <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit">SUBMIT</button>
-            </form>
-        </div>
-        <div class="get-in-touch-container">
-            <div class="get-in-touch">
+            <div class="get-in-touch sizer">
                 <h2>Get In Touch</h2>
                 <p>We are here to answer any questions you may have about <strong>STEM Astronomy Club</strong>. Whether you’re interested in joining, have suggestions, or just want to learn more about us, feel free to reach out to us!</p>
                 <div class="social-icons">
@@ -64,8 +59,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
     <!--###############################################-->
     
@@ -127,42 +120,37 @@
     <!--###############################################-->
     
     <div class="footer">
-        <div class="contact">
-          <img class="clubLogo" src="images/club-logo.png">
-          <div class="facebook">
-            <img class="icon" src="images/Facebook.png">
-            <a href="https://www.facebook.com/STEM.Astronomy" target="_blank">STEM Astronomy Club</a>
-          </div>
-          <div class="email">
-            <img class="icon" src="images/Gmail.png">
-            <p>astronomy@stemegypt.edu.eg</p>
-          </div>
+      <div class="contact">
+        <img class="clubLogo" src="images/club-logo.png">
+        <div class="facebook">
+          <img src="images/Facebook.png" alt="">
+          <a href="https://www.facebook.com/STEM.Astronomy" target="_blank">STEM Astronomy Club</a>
+        </div>  
+        <div class="email">
+          <img src="images/Gmail.png" alt="">
+          <p>astronomy@stemegypt.edu.eg</p>
         </div>
-        <div class="main">
-          <p class="Main">Main</p>
-          <div class="mainLinks">
-            <p>Our Team</p>
-            <p>Competition</p>
-            <p>FAQ</p>
-          </div>
+      </div>
+      <div class="main">
+        <p class="Main">Main</p>
+        <div class="mainLinks">
+          <a href="team.html">Our Team</a>
+          <a href="competition.html">Competition</a>
+          <a href="contact.html">Contact</a>
         </div>
-        <div class="activities">
-          <p class="Main">Activities</p>
-          <div class="mainLinks">
-            <p>Discussions</p>
-            <p>Events</p>
-            <p>Simulation Labs</p>
-            <p>Scientific Computing</p>
-            <p>Non-Academic Activities</p>
-          </div>
+      </div>
+      <div class="activities">
+        <p class="Main">Activities</p>
+        <div class="mainLinks">
+          <a href="activities.html#dis">Discussions</a>
+          <a href="events.html">Events</a>
+          <a href="activities.html#simlabs">Simulation Labs</a>
+          <a href="activities.html#scicom">Scientific Computing</a>
+          <a href="activities.html#naa">Non-Academic Activities</a>
         </div>
-        <div class="newsletter">
-          <p class="joinNewsletter">Join Our Newsletter</p>
-          <input type="email" name="email" placeholder="Email address" required>
-          <button class="submitButton">SUBMIT</button>
-        </div>
-    </div>
-      <div class="Line"></div>
-      
+      </div>
+  </div>
+    <div class="Line"></div>
   </body>
+  <script src="script.js"></script>
 </html>
