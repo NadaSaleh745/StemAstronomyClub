@@ -12,26 +12,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-
         <link rel="stylesheet" href="home.css">
     </head>
     <body>
-
-        <div class="back">
+          <div class="back" id="back">
             <div class="nav sizer">
-              <div class="logo">
+              <div class="logo" id="logo">
                 <img src="images/club-logo.png" alt="">
               </div>
               <div class="rightSec">
-                <button class="links">Home</button>
-                <button class="links">Team</button>
-                <button class="links">Competition</button>
-                <button class="links">Contact</button>
-                <div class="list">
+                <a href="home.html" class="links">Home</a>
+                <a href="team.html" class="links">Team</a>
+                <a href="activities.html" class="links">Activities</a>
+                <a href="competition.html" class="links">Competition</a>
+                <a href="contact.html" class="links">Contact</a>
+                <button class="list" id="list">
                   <img src="images/burger-menu-svgrepo-com.svg" alt="">
-                </div>
+                </button>
               </div>
             </div>
+          </div>
+          <div class="menu" id="menu">
+            <a href="home.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="activities.html">Activities</a>
+            <a href="competition.html">Competition</a>
+            <a href="contact.html">Contact</a>
           </div>
     
         <!--######################################-->
@@ -41,11 +47,11 @@
             Deepen Your Fascination With The Cosmos
           </div>
           <div class="h2">
-            Welcome to the Astronomy Club! Join us to learn about the cosmos and participate in our competitions.
+            Welcome to STEM Astronomy Club – Where curiosity meets the cosmos!
           </div>
           <div class="buttons sizer">
-            <button class="joinUS">JOIN US</button>
-            <button class="seeActs">SEE ACTIVITIES</button>
+            <a class="joinUS button1">JOIN US</a>
+            <a href="activities.html" class="seeActs">SEE ACTIVITIES</a>
           </div>
         </div>
 
@@ -54,7 +60,9 @@
         <div class="about-us sizer">
           <h2>About Us</h2>
           <div class="about-us-text">
-              <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Himenaeos rhoncus molestie, fames in nam cubilia ultrices. Vivamus natoque aenean sapien cursus aliquam; lobortis feugiat gravida. Nataque nam nisl aptent vivamus leo placerat.</p>
+              <p>Welcome to STEM Astronomy Club – where the universe comes alive! In December 2017, we founded our club which is dedicated to sharing the wonders of astronomy with enthusiasts of all ages and skill levels. Whether you're gazing up at the night sky for the first time or you're a seasoned stargazer, we’re here to make the cosmos more accessible, fascinating, and fun.
+                Our mission? To spread the love of astronomy far and wide. Join us as we embark on journeys across the cosmos, unlock the secrets of the stars, and cultivate a community that’s as passionate about astronomy as you are!
+              </p>
           </div>
           <div class="stats">
               <div class="stat">
@@ -80,12 +88,15 @@
 
         <div class="m1-header">What We Do</div>
         <div class="m1-container sizer">
-          <img src="images/events-photo.png" class="m1-image">
           <div class="m1-text">
-              <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Massa ultrices porttitor placerat amet nam facilisis mus platea. Diam dis platea nec laoreet ornare. Rutrum nisi iaculis nunc porttitor, aliquet venenatis sagittis. Ante donec augue luctus duis viverra. Litora nec nibh nam; primis malesuada quis. Habitant consectetur dolor ex litora finibus iaculis.</p>
+              <p>Weekly Cosmic Explorations: Every week, we dive into a new topic – from black holes and supernovae to the science of exoplanets and life beyond Earth. Our discussions are interactive, insightful, and designed to leave you starstruck!
+                House Teams & Friendly Competition: Like the Hogwarts houses, each member joins one of our cosmic houses, building bonds and competing in friendly challenges. You’ll work with your housemates on group activities and share what you learn.
+                Assignments: To sharpen your knowledge, we offer engaging assignments graded by our academic heads, complete with feedback to help you learn and improve
+                Stress-Free Fun: We don’t just stick to academics! We also organize a variety of fun challenges and competitions between houses to keep the atmosphere light and enjoyable.  There’s always something happening at STEM Astronomy Club.
+              </p>
               <div class="press"> 
-                <button>DISCUSSIONS</button>
-                <button>EVENTS</button>
+                <a href="activities.html#dis" class="button1">DISCUSSIONS</a>
+                <a href="events.html" class="button1">EVENTS</a>
               </div> 
           </div>
         </div>
@@ -95,11 +106,11 @@
         <div class="competition-section sizer">
           <h2>Competition</h2>
           <div class="competition-text">
-              Lorem ipsum dolor amet, consectetur adipiscing elit. Himenaeos rhoncus molestie, fames in nam cubilia ultrices. Vivamus natoque aenean sapien cursus aliquam; lobortis feugiat gravida. Nataque nam nisl aptent vivamus leo placerat. <br> Download the Syllabus <a href="#" class="gradient-link">HERE</a>
+              Join the ultimate astronomy competition organized by the club! Dive into exciting topics like stellar evolution, planetary science, and cosmic exploration. Compete against other young astronomers, expand your knowledge of the universe, and showcase your skills. <a href="#" class="gradient-link">HERE</a>
           </div>
           <div class="buttons2">
-            <button class="participate">PARTICIPATE</button>
-            <button class="learnMore">LEARN MORE</button>
+            <a href="competition.html" class="participate button1">PARTICIPATE</a>
+            <a href="competition.html" class="learnMore">LEARN MORE</a>
           </div>
         </div>
 
@@ -109,52 +120,60 @@
         <div class="wad-cards sizer">
           <div class="wad-card">
             <h1>Simulation <br> Labs</h1>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-            <button>LEARN MORE</button>
+            <p>Get a feel of what it's like to be a real astronomer. Examine real-life data, apply your scientific knowledge, and produce meaningful conclusions.</p>
+            <a href="activities.html#simlabs">LEARN MORE</a>
+            <div class="cover"></div>
           </div>
           <div class="wad-card">
             <h1>Scientific <br> Computation</h1>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-            <button>LEARN MORE</button>
+            <p>Learn the basics of programming languages. Use them in your calculations, and handle great amounts of scientific data.</p>
+            <a href="activities.html#scicom">LEARN MORE</a>
+            <div class="cover"></div>
           </div>
           <div class="wad-card">
             <h1>Non-Academic <br> Activities</h1>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-            <button>LEARN MORE</button>
+            <p>Engage in various activities among people with the same interests like you. Meet, have fun, and get to know each other.</p>
+            <a href="activities.html#naa">LEARN MORE</a>
+            <div class="cover"></div>
           </div>
         </div>
 
         <!--######################################-->
 
+        <div class="tele" id="ms"></div>
         <div class="title2">Learn about our members' stories</div>
         <div class="learnAboutOurMembers sizer">
           <div class="memberStory">
-            <img class="memberPhoto" src="images/real-image.png">
+            <img class="memberPhoto" src="images/Zinab_Mohamed.png">
             <div class="story1">
-              <p class="membersNames">Member Name</p>
+              <p class="membersNames">Zinab Mohamed</p>
               <p class="paragraph">
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Massa ultrices porttitor
-                placerat amet nam facilisis mus platea.
-                Diam dis platea nec laoreet ornare. Rutrum nisi iaculis nunc porttitor,
-                aliquet venenatis sagittis. Ante donec augue luctus duis viverra.
+                "One of the things that I enjoy very much is calculations and labs. 
+                For example, we create simulations of experiments, collect data from them, 
+                solve questions on them, and try to change something in the experiment and 
+                notice what it will affect and how ^°^"
               </p>
-              <button class="storyButtons">SEE FULL STORY</button>
+              <a class="storyButtons button1" href="https://www.facebook.com/share/p/1Da8sD2hRC/" target="_blank">SEE FULL STORY</a>
             </div>
           </div>
           <div class="memberStory2">
             <div class="story2">
-              <p class="membersNames">Member Name</p>
+              <p class="membersNames">Salma Abd El-Latif</p>
               <p class="paragraph">
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Massa ultrices porttitor
-                placerat amet nam facilisis mus platea.
-                Diam dis platea nec laoreet ornare. Rutrum nisi iaculis nunc porttitor,
-                aliquet venenatis sagittis. Ante donec augue luctus duis viverra.
+                "Entering a place like this made a huge difference to me, 
+                and perhaps without it I would not have been able to learn all of this. 
+                Yes, I could have searched and searched, but I would never have learned 
+                in the academic way that exists in the club, nor would I have received 
+                help from larger groups, nor would I have gotten to know the community 
+                that helped me, not only in learning astronomy, 
+                but in learning other things as well"
               </p>
-              <button class="storyButtons">SEE FULL STORY</button>
+              <a class="storyButtons button1" href="https://www.facebook.com/share/p/15LAcaLXdR/" target="_blank">SEE FULL STORY</a>
             </div>
-            <img class="memberPhoto2" src="images/real-image.png">
+            <img class="memberPhoto2" src="images/Salma Abd El-Latif.png">
           </div>
         </div>
+        
 
         <!--######################################-->
 
@@ -162,39 +181,34 @@
             <div class="contact">
               <img class="clubLogo" src="images/club-logo.png">
               <div class="facebook">
-                <img class="icon" src="images/Facebook.png">
+                <img src="images/Facebook.png" alt="">
                 <a href="https://www.facebook.com/STEM.Astronomy" target="_blank">STEM Astronomy Club</a>
-              </div>
+              </div>  
               <div class="email">
-                <img class="icon" src="images/Gmail.png">
+                <img src="images/Gmail.png" alt="">
                 <p>astronomy@stemegypt.edu.eg</p>
               </div>
             </div>
             <div class="main">
               <p class="Main">Main</p>
               <div class="mainLinks">
-                <p>Our Team</p>
-                <p>Competition</p>
-                <p>FAQ</p>
+                <a href="team.html">Our Team</a>
+                <a href="competition.html">Competition</a>
+                <a href="contact.html">Contact</a>
               </div>
             </div>
             <div class="activities">
               <p class="Main">Activities</p>
               <div class="mainLinks">
-                <p>Discussions</p>
-                <p>Events</p>
-                <p>Simulation Labs</p>
-                <p>Scientific Computing</p>
-                <p>Non-Academic Activities</p>
+                <a href="activities.html#dis">Discussions</a>
+                <a href="events.html">Events</a>
+                <a href="activities.html#simlabs">Simulation Labs</a>
+                <a href="activities.html#scicom">Scientific Computing</a>
+                <a href="activities.html#naa">Non-Academic Activities</a>
               </div>
-            </div>
-            <div class="newsletter">
-              <p class="joinNewsletter">Join Our Newsletter</p>
-              <input type="email" name="email" placeholder="Email address" required>
-              <button class="submitButton">SUBMIT</button>
             </div>
         </div>
           <div class="Line"></div>
-    
     </body>
+    <script src="script.js"></script>
 </html>
