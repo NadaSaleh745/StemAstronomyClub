@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body{
     margin: 0;
     color: white;
-    background-image: url("images/contact-background.png");
+    background-image: url("images/home-background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -23,7 +27,7 @@ body{
     left: 0;
     width: 100%;
     height: 64px;
-    z-index: 1;
+    z-index: 10;
     background: linear-gradient(270.33deg, rgba(0, 102, 204, 0.7) -7.42%, rgba(160, 97, 181, 0.7) 118.81%);
 }
 
@@ -35,8 +39,7 @@ body{
 
 .logo{
     width: 180px;
-    height: 180px;
-    margin-top: -55px;
+    height: 62px;
     position: relative;
 }
 
@@ -48,10 +51,10 @@ body{
 .logo::before {
     content: "";
     position: absolute;
-    top: 60px;
+    top: 0px;
     left: 0px;
     width: 100%;
-    height: 55px;
+    height: 62px;
     cursor: pointer;
 }
 
@@ -62,10 +65,11 @@ body{
     align-items: center;
     justify-content: flex-end;
 }
+
 .links{
+    display: block;
     height: 100%;
-    width: fit-content;
-    padding: 0 30px;
+    padding: 18px 30px;
     border-width: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -75,6 +79,7 @@ body{
     color: white;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
 }
 
 .list {
@@ -85,6 +90,8 @@ body{
     height: 64px;
     cursor: pointer;
     position: relative;
+    background: none;
+    border: none;
 }
 
 .list img {
@@ -100,6 +107,37 @@ body{
     background-color: rgb(255, 255, 255, 0.1)
 }
 
+.menu {
+    margin-top: 64px;
+    background-color: #005bb5;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu a {
+    display: block;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    z-index: 10;
+}
+
+.menu a:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
 /****************************************************/
 
 @media (max-width: 1000px) {
@@ -111,6 +149,10 @@ body{
     }
     .list {
         display: flex;
+    }
+    .back {
+        background: none;
+        background-color: #005bb5;
     }
 }
 @media (max-width: 500px) {
@@ -129,7 +171,7 @@ body{
     align-items: center;
     height: fit-content;
     gap: 15px;
-    margin: 204px auto 140px auto;
+    margin: 164px auto 140px auto;
 }
 
 .t-container h1 {
@@ -187,17 +229,17 @@ body{
     color: white;
     font-weight: 400;
     font-size: 38px;
-    width: 100%;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .f-container {
     color: white;
     display: flex;
     justify-content: space-between;
-    height: fit-content;
     margin-bottom: 70px;
     flex-wrap: wrap-reverse;
+    align-items: flex-end;
 }
 
 .f-container img {
@@ -210,7 +252,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
     margin: 0px;
     gap: 30px;
 }
@@ -229,7 +271,8 @@ body{
     margin: 0;
 }
 
-.txt button {
+.txt a {
+    display: block;
     width: 250px;
     height: 60px;
     border-radius: 13px;
@@ -239,6 +282,9 @@ body{
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+    text-align-last: center;
+    padding-top: 14px;
+    font-weight: lighter;
 }
 
 /****************************************************/
@@ -299,7 +345,6 @@ body{
     border-radius: 18px;
     text-align: center;
     position: relative;
-    z-index: -2;
 }
 
 .card img {
@@ -308,7 +353,7 @@ body{
     border-radius: 70px;
     margin-top: -50px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .card span {
@@ -365,7 +410,8 @@ body{
     margin: 30px 0 40px;
 }
 
-.card button {
+.card a {
+    display: block;
     width: 85%;
     height: 75px;
     background-color: #35609f;
@@ -375,25 +421,33 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    z-index: 1;
     position: relative;
-}
-
-.card button::after {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    width: 100%;
-    height: 75px;
-    border-radius: 14px;
-    background: linear-gradient(90deg, #A061B5 0%, #F7F9FF 48.5%, #0066CC 100%);
-    box-sizing: content-box;
-    padding: 3px;
-    z-index: -1;
+    cursor: pointer;
+    padding-top: 14px;
+    margin-left: 20px;
 }
 
 .heads .role {
     font-size: 16px;
+}
+
+.card a:hover {
+    background-color: #5b82bc;
+}
+
+.cover {
+    position: absolute;
+    width: calc(85% + 6px);
+    height: 81px;
+    background: linear-gradient(90deg, #A061B5 0%, #F7F9FF 48.5%, #0066CC 100%);
+    border-radius: 14px;
+    bottom: 22px;
+    left: 17px;
+}
+
+.heads .cover {
+    bottom: 27px;
 }
 
 /****************************************************/
@@ -416,13 +470,17 @@ body{
     margin: 0 auto;
     background: #4D4D4D47;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .members h2 {
     font-family: 'Rubik One', sans-serif;
     font-weight: 400;
     font-size: 50px;
-    /* line-height: 62.5px; */
     margin-bottom: 20px;
 }
 
@@ -442,12 +500,13 @@ body{
     margin-bottom: 30px;
 }
 
-.members button {
+.members a {
+    display: block;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: lighter;
     font-size: 18px;
     text-align: center;
-    padding: 12px 20px;
+    padding: 14px 20px;
     border: none;
     max-width: 300px;
     height: 60px;
@@ -457,11 +516,7 @@ body{
     font-size: 21.1999998px;
     transition: background-color 0.3s ease;
     border-radius: 12px;
-}
-
-.members button:hover {
-    background: none;
-    background-color: rgb(74, 57, 150);
+    margin-bottom: 50px;
 }
 
 /****************************************************/
@@ -494,46 +549,43 @@ body{
 .footer{
     display: flex;
     background-color: rgba(77, 77, 77, 0.3);
-    height: 321px;
+    height: 280px;
     justify-content: space-evenly;
     position: relative;
 }
 
-.contact{
-    text-align: center;
+.contact {
+    margin-top: 50px;
 }
 
 .clubLogo{
-    height: 200px;
+    width: 180px;
+    height: 62px;
 }
 
-.facebook, .email{
-    display: grid;
-    grid-template-columns: 45px 1fr;
+.facebook a, .email p{
+    display: inline;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: lighter;
-    line-height: 21.79px;
     text-align: left;
-    margin-top: -60px;
-}
-
-.icon{
-    height: 25px;
-}
-
-.email{
-    margin-top: 0px;
-}
-
-.facebook a {
     color: white;
-    text-decoration: none;
+    height: fit-content;
+}
+
+.facebook img, .email img {
+    width: 20px;
+    transform: translateY(3px);
+    margin-right: 5px;
+}
+
+.facebook {
+    margin: 20px 0;
 }
 
 .facebook a:hover {
-    color: blue;
+    color: #0066cc;
 }
 
 .activities{
@@ -552,7 +604,8 @@ body{
     text-align: left;
 }
 
-.mainLinks{
+.mainLinks a {
+    display: block;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: lighter;
@@ -560,49 +613,12 @@ body{
     text-align: left;
     color: #C8CAD0;
     white-space: nowrap;
-}
-
-.newsletter{
-    margin-top: 50px;
-}
-
-.newsletter input {
-    height: 40px;
-    width: 250px;
-    border-style: none;
-    border-radius: 8px;
-    padding-left: 13px;
-    background: #D9D9D9CC;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.newsletter input::placeholder {
-    color: black;
-    opacity: 0.9;
-}
-
-.joinNewsletter{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 27.24px;
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.submitButton{
-    border: none;
-    width: 180px;
-    height: 48px;
-    border-radius: 15px;
-    background: linear-gradient(270deg, #0066CC -9.64%, #A061B5 158.23%);
-    color: white;
-    font-size: 18px;
+    margin-bottom: 12px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: "Open Sans", sans-serif;
-    font-weight: lighter;
+}
+
+.mainLinks a:hover {
+    color: white;
 }
 
 .Line{
@@ -615,16 +631,29 @@ body{
 
 @media (max-width: 900px) {
 
-    .main, .activities {
+    .main {
         display: none;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
 
-    .newsletter {
+    .activities {
         display: none;
     }
 }
 
+/****************************************************/
+/****************************************************/
+
+.button1 {
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+    background: none;
+    background-color: rgb(74, 57, 150);
+}
+
+/****************************************************/
 /****************************************************/
