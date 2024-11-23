@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,39 +18,47 @@
     </head>
     <body>
 
-        <div class="back">
-            <div class="nav sizer">
-              <div class="log">
-                <img src="images/club-logo.png" alt="">
-              </div>
-              <div class="rightSec">
-                <button class="links">Home</button>
-                <button class="links">Team</button>
-                <button class="links">Competition</button>
-                <button class="links">Contact</button>
-                <div class="list">
-                  <img src="images/burger-menu-svgrepo-com.svg" alt="">
-                </div>
-              </div>
-            </div>
+      <div class="back" id="back">
+        <div class="nav sizer">
+          <div class="logo" id="logo">
+            <img src="images/club-logo.png" alt="">
           </div>
+          <div class="rightSec">
+            <a href="home.html" class="links">Home</a>
+            <a href="team.html" class="links">Team</a>
+            <a href="activities.html" class="links">Activities</a>
+            <a href="competition.html" class="links">Competition</a>
+            <a href="contact.html" class="links">Contact</a>
+            <button class="list" id="list">
+              <img src="images/burger-menu-svgrepo-com.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <a href="home.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="activities.html">Activities</a>
+        <a href="competition.html">Competition</a>
+        <a href="contact.html">Contact</a>
+      </div>
     
         <!--######################################-->
 
         <div class="t-container sizer">
             <h1>Meet Our Team</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Get to know the passionate minds behind our astronomy club! Our team is made up of astronomy enthusiasts dedciated to exploring the cosmos and sharing the wonders of the universe. Together, we're here to inspire, educate, and make the stars a little closer for everyone. </p>
         </div>
         <div class="i-container sizer">
-            <h1>Title For Introduction</h1>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos rhoncus molestie, fames in nam cubilia ultrices. Vivamus natoque aenean sapien cursus aliquam; lobortis feugiat gravida. Natoque nam nisl aptent vivamus leo placerat.</p>
+            <h1>Stories behind our club</h1>
+            <p>Our team is full of inspiring stories. Learn about the learning journeys of these individuals, how each one of them discovered their passion, and how they ended up where they are, continuing to share their experiences and help everyone create their own story to tell.</p>
         </div>
         <h1 class="f-header">Meet Our Founder</h1>
         <div class="f-container sizer">
             <div class="txt">
                 <h2>Abdelrahman Bayoumy</h2>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Massa ultrices porttitor placerat amet nam facilisis mus platea. Diam dis platea nec laoreet ornare. Rutrum nisi iaculis nunc porttitor, aliquet venenatis sagittis. Ante donec augue luctus duis viverra.</p>
-                <button>SEE FULL STORY</button>
+                <p>The founder of the STEM Astronomy Club and Teaching Assistant at Zewail City discovered his passion for astronomy early on. Fascinated by star alignments in the sky, he began exploring astronomy through a Facebook page during preparatory school. Using a mobile app, he learned to identify stars and constellations. In secondary school, he joined an astronomy club, where he learned more and gave lectures, inspiring him to establish the STEM Astronomy Club to empower young enthusiasts to explore this fundamental science.</p>
+                <a class="button1">SEE FULL STORY</a>
             </div>
             <img src="images/real-image.png" alt="">
         </div>
@@ -66,7 +75,8 @@
                 <span class="circ4"></span>
                 <div class="name">Mohamed Ahmed</div>
                 <div class="role">Club's President</div>
-                <button>MOHAMED'S <br> STORY</button>
+                <a href="https://www.facebook.com/share/p/1EM49fe7Gm/" target="_blank">MOHAMED'S <br> STORY</a>
+                <div class="cover"></div>
             </div>
             <div class="card">
                 <img src="images/real-image.png" alt="">
@@ -76,7 +86,8 @@
                 <span class="circ4"></span>
                 <div class="name">Mohammed Hany</div>
                 <div class="role">Advisory Board</div>
-                <button>MOHAMMED'S <br> STORY</button>
+                <a href="https://www.facebook.com/share/p/15NGd1HZuC/" target="_blank">MOHAMMED'S <br> STORY</a>
+                <div class="cover"></div>
             </div>
             <div class="card">
                 <img src="images/real-image.png" alt="">
@@ -86,17 +97,8 @@
                 <span class="circ4"></span>
                 <div class="name">Yomna Osama</div>
                 <div class="role">Advisory Board</div>
-                <button>YOMNA'S <br> STORY</button>
-            </div>
-            <div class="card">
-                <img src="images/real-image.png" alt="">
-                <span class="circ1"></span>
-                <span class="circ2"></span>
-                <span class="circ3"></span>
-                <span class="circ4"></span>
-                <div class="name">Mr. X</div>
-                <div class="role">Future Club's President</div>
-                <button>MR. X'S <br> STORY</button>
+                <a href="https://www.facebook.com/share/p/1Ws6tQ9ewz/" target="_blank">YOMNA'S <br> STORY</a>
+                <div class="cover"></div>
             </div>
         </div>
 
@@ -112,7 +114,8 @@
                 <span class="circ4"></span>
                 <div class="name">Nour Elshennawy</div>
                 <div class="role">Head of Academic Comittee</div>
-                <button>NOUR'S <br> STORY</button>
+                <a>NOUR'S <br> STORY</a>
+                <div class="cover"></div>
             </div>
             <div class="card">
                 <img src="images/real-image.png" alt="">
@@ -122,7 +125,8 @@
                 <span class="circ4"></span>
                 <div class="name">Aya Allam</div>
                 <div class="role">Vice Head of Academic Comittee</div>
-                <button>AYA'S <br> STORY</button>
+                <a href="https://www.facebook.com/share/p/17zLVAHdnP/" target="_blank">AYA'S <br> STORY</a>
+                <div class="cover"></div>
             </div>
             <div class="card">
                 <img src="images/real-image.png" alt="">
@@ -132,7 +136,8 @@
                 <span class="circ4"></span>
                 <div class="name">Hager Elshennawy</div>
                 <div class="role">Head of Non-Academic Comittee</div>
-                <button>HAGER'S <br> STORY</button>
+                <a>HAGER'S <br> STORY</a>
+                <div class="cover"></div>
             </div>
             <div class="card">
                 <img src="images/real-image.png" alt="">
@@ -142,7 +147,8 @@
                 <span class="circ4"></span>
                 <div class="name">Zahraa Selim</div>
                 <div class="role">Head of Writers Comittee</div>
-                <button>ZAHRAA'S <br> STORY</button>
+                <a>ZAHRAA'S <br> STORY</a>
+                <div class="cover"></div>
             </div>
         </div>
 
@@ -151,50 +157,45 @@
         <div class="members sizer">
           <h2>Our Distinguished Members</h2>
           <div class="members-text">
-              Lorem ipsum dolor amet, consectetur adipiscing elit. Himenaeos rhoncus molestie, fames in nam cubilia ultrices. Vivamus natoque aenean sapien cursus aliquam; lobortis feugiat gravida. Nataque nam nisl aptent vivamus leo placerat.
+              Despite any differences, all of our members share the same passion and love for astronomy. This drives them to work together on exploring the secrets of the heavens, each through their own unique story.
           </div>
-          <button type="submit">SEE MEMBERS STORIES</button>
+          <a type="submit" class="button1" href="home.html#ms">SEE MEMBERS STORIES</a>
         </div>
 
         <!--######################################-->
 
         <div class="footer">
-            <div class="contact">
-              <img class="clubLogo" src="images/club-logo.png">
-              <div class="facebook">
-                <img class="icon" src="images/Facebook.png">
-                <a href="https://www.facebook.com/STEM.Astronomy" target="_blank">STEM Astronomy Club</a>
-              </div>
-              <div class="email">
-                <img class="icon" src="images/Gmail.png">
-                <p>astronomy@stemegypt.edu.eg</p>
-              </div>
+          <div class="contact">
+            <img class="clubLogo" src="images/club-logo.png">
+            <div class="facebook">
+              <img src="images/Facebook.png" alt="">
+              <a href="https://www.facebook.com/STEM.Astronomy" target="_blank">STEM Astronomy Club</a>
+            </div>  
+            <div class="email">
+              <img src="images/Gmail.png" alt="">
+              <p>astronomy@stemegypt.edu.eg</p>
             </div>
-            <div class="main">
-              <p class="Main">Main</p>
-              <div class="mainLinks">
-                <p>Our Team</p>
-                <p>Competition</p>
-                <p>FAQ</p>
-              </div>
+          </div>
+          <div class="main">
+            <p class="Main">Main</p>
+            <div class="mainLinks">
+              <a href="team.html">Our Team</a>
+              <a href="competition.html">Competition</a>
+              <a href="contact.html">Contact</a>
             </div>
-            <div class="activities">
-              <p class="Main">Activities</p>
-              <div class="mainLinks">
-                <p>Discussions</p>
-                <p>Events</p>
-                <p>Simulation Labs</p>
-                <p>Scientific Computing</p>
-                <p>Non-Academic Activities</p>
-              </div>
+          </div>
+          <div class="activities">
+            <p class="Main">Activities</p>
+            <div class="mainLinks">
+              <a href="activities.html#dis">Discussions</a>
+              <a href="events.html">Events</a>
+              <a href="activities.html#simlabs">Simulation Labs</a>
+              <a href="activities.html#scicom">Scientific Computing</a>
+              <a href="activities.html#naa">Non-Academic Activities</a>
             </div>
-            <div class="newsletter">
-              <p class="joinNewsletter">Join Our Newsletter</p>
-              <input type="email" name="email" placeholder="Email address" required>
-              <button class="submitButton">SUBMIT</button>
-            </div>
-        </div>
-          <div class="Line"></div>
-    
+          </div>
+      </div>
+        <div class="Line"></div>
     </body>
+    <script src="script.js"></script>
 </html>
