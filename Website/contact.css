@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body{
     margin: 0;
     color: white;
-    background-image: url(images/contact-background.png);
+    background-image: url("images/home-background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -23,7 +27,7 @@ body{
     left: 0;
     width: 100%;
     height: 64px;
-    z-index: 1;
+    z-index: 10;
     background: linear-gradient(270.33deg, rgba(0, 102, 204, 0.7) -7.42%, rgba(160, 97, 181, 0.7) 118.81%);
 }
 
@@ -35,8 +39,7 @@ body{
 
 .logo{
     width: 180px;
-    height: 180px;
-    margin-top: -55px;
+    height: 62px;
     position: relative;
 }
 
@@ -48,10 +51,10 @@ body{
 .logo::before {
     content: "";
     position: absolute;
-    top: 60px;
+    top: 0px;
     left: 0px;
     width: 100%;
-    height: 55px;
+    height: 62px;
     cursor: pointer;
 }
 
@@ -62,10 +65,11 @@ body{
     align-items: center;
     justify-content: flex-end;
 }
+
 .links{
+    display: block;
     height: 100%;
-    width: fit-content;
-    padding: 0 30px;
+    padding: 18px 30px;
     border-width: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -75,6 +79,7 @@ body{
     color: white;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
 }
 
 .list {
@@ -85,6 +90,8 @@ body{
     height: 64px;
     cursor: pointer;
     position: relative;
+    background: none;
+    border: none;
 }
 
 .list img {
@@ -100,6 +107,37 @@ body{
     background-color: rgb(255, 255, 255, 0.1)
 }
 
+.menu {
+    margin-top: 64px;
+    background-color: #005bb5;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu a {
+    display: block;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    z-index: 10;
+}
+
+.menu a:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
 /****************************************************/
 
 @media (max-width: 1000px) {
@@ -111,6 +149,10 @@ body{
     }
     .list {
         display: flex;
+    }
+    .back {
+        background: none;
+        background-color: #005bb5;
     }
 }
 @media (max-width: 500px) {
@@ -127,56 +169,22 @@ body{
     font-size: 50px;
     font-family: 'Rubik One', sans-serif;
     font-weight: 400;
-    margin: 214px 0 150px 0;
+    margin: 164px 0 150px 0;
 }
 
-.contact-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
+.get-in-touch {
+    background-color: #4D4D4D47;
+    border-radius: 20px;
+    padding: 30px;
     margin-bottom: 150px;
-}
-
-.form-container {
-    background: rgb(77, 77, 77, 0.28);
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    max-width: 579px;
-    max-height: 489px;
-}
-
-.form-container {
-    margin-right: 20px;
-}
-
-.get-in-touch-container {
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    max-width: 600px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.get-in.touch{
-    width: 35%;
-    padding-left: 10px;
-    margin-left: 20px;
-    color: white;
-    background-color: blue;
 }
 
 .get-in-touch h2 {
     margin-top: 0px;
-    margin-bottom: -20px;
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Rubik One', sans-serif;
     font-weight: lighter;
+    text-align: center;
 }
 
 .get-in-touch p {
@@ -184,53 +192,17 @@ body{
     line-height: 35.41px;
     font-family: 'open sans', sans-serif;
     font-weight: lighter;
+    text-align: center;
+    width: 80%;
+    margin-inline: auto;
 }
 
-.name-fields {
+.social-icons {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-}
-
-.contact-form input, .contact-form textarea {
-    font-family: sans-serif;
-    margin-bottom: 10px;
-    padding: 15px;
-    border: none;
-    border-radius: 13px;
-    background: #DCDADA;
-    color: #333;
-    width: 100%;
-    font-size: 16px;
-}
-
-.contact-form input::placeholder, .contact-form textarea::placeholder {
-    color: #666;
-}
-
-.contact-form textarea {
-    height: 120px ;
-    resize: none;
-}
-
-.contact-form button {
-    padding: 22px, 48px, 22px, 48px;
-    border: none;
-    width: 149px;
-    height: 50px;
-    border-radius: 15px;
-    background: linear-gradient(270deg, #0066CC -9.64%, #A061B5 158.23%);
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    align-self: center;
-    margin-top: 10px;
-}
-
-.contact-form button:hover {
-    background-color: rgb(74, 57, 150);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 10px;
 }
 
 .icon-text-pair{
@@ -245,14 +217,16 @@ body{
 }
 
 .icon-text-pair a, .icon-text-pair p {
+    display: inline;
     font-family: 'Open sans', sans-serif;
     color: white;
     font-size: 20px;
     text-decoration: none;
+    margin: 0;
 }
 
 .icon-text-pair a:hover {
-    color: blue;
+    color: #0066cc;
     text-decoration: underline;
 }
 
@@ -336,7 +310,7 @@ label::after {
     height: 30px;
     top: 20px;
     right: 40px;
-    background-image: url("../images/downward-arrow.png");
+    background-image: url("images/downward-arrow.png");
     background-size: cover;
     transition: 0.3s;
 }
@@ -344,7 +318,6 @@ label::after {
 .qa input:checked + label::after {
     rotate: -90deg;
 }
-
 
 /****************************************************/
 
@@ -369,46 +342,43 @@ label::after {
 .footer{
     display: flex;
     background-color: rgba(77, 77, 77, 0.3);
-    height: 321px;
+    height: 280px;
     justify-content: space-evenly;
     position: relative;
 }
 
-.contact{
-    text-align: center;
+.contact {
+    margin-top: 50px;
 }
 
 .clubLogo{
-    height: 200px;
+    width: 180px;
+    height: 62px;
 }
 
-.facebook, .email{
-    display: grid;
-    grid-template-columns: 45px 1fr;
+.facebook a, .email p{
+    display: inline;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: lighter;
-    line-height: 21.79px;
     text-align: left;
-    margin-top: -60px;
-}
-
-.icon{
-    height: 25px;
-}
-
-.email{
-    margin-top: 0px;
-}
-
-.facebook a {
     color: white;
-    text-decoration: none;
+    height: fit-content;
+}
+
+.facebook img, .email img {
+    width: 20px;
+    transform: translateY(3px);
+    margin-right: 5px;
+}
+
+.facebook {
+    margin: 20px 0;
 }
 
 .facebook a:hover {
-    color: blue;
+    color: #0066cc;
 }
 
 .activities{
@@ -427,7 +397,8 @@ label::after {
     text-align: left;
 }
 
-.mainLinks{
+.mainLinks a {
+    display: block;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: lighter;
@@ -435,65 +406,12 @@ label::after {
     text-align: left;
     color: #C8CAD0;
     white-space: nowrap;
-}
-
-.newsletter{
-    margin-top: 50px;
-}
-
-/* .mail{
-    display: flex;
-    align-items: center;
-    width: 380px;
-    height: 48px;
-    padding: 1px 32px 1px 20px;
-    border-radius: 10px;
-    background: #D9D9D9CC;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: lighter;
-    line-height: 21.79px;
-    text-align: center;
-    color: #000000;
-} */
-
-.newsletter input {
-    height: 40px;
-    width: 250px;
-    border-style: none;
-    border-radius: 8px;
-    padding-left: 13px;
-    background: #D9D9D9CC;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.newsletter input::placeholder {
-    color: black;
-    opacity: 0.9;
-}
-
-.joinNewsletter{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 27.24px;
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.submitButton{
-    border: none;
-    width: 180px;
-    height: 48px;
-    border-radius: 15px;
-    background: linear-gradient(270deg, #0066CC -9.64%, #A061B5 158.23%);
-    color: white;
-    font-size: 18px;
+    margin-bottom: 12px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: "Open Sans", sans-serif;
-    font-weight: lighter;
+}
+
+.mainLinks a:hover {
+    color: white;
 }
 
 .Line{
@@ -506,14 +424,14 @@ label::after {
 
 @media (max-width: 900px) {
 
-    .main, .activities {
+    .main {
         display: none;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
 
-    .newsletter {
+    .activities {
         display: none;
     }
 }
