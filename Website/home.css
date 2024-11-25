@@ -12,7 +12,8 @@ body{
     margin: 0;
     color: white;
     background-image: url("images/home-background.png");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sizer {
