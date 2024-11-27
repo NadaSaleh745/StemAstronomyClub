@@ -323,3 +323,167 @@ body{
 }
 
 /****************************************************/
+
+.event-shower {
+    max-width: 1000px; /* Same as slideshow container's max-width */
+    margin: auto;
+    position: relative; /* For positioning the arrows inside it */
+    display: flex;
+    justify-content: center; /* Center the slideshow inside */
+}
+
+.slideshow-container {
+    overflow: hidden;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    font-family: "Rubik One", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.slides-wrapper, .slides-wrapper2, .slides-wrapper3{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mySlides, .mySlides2, .mySlides3{
+    min-width: 100%;
+    position: relative; /* Ensure child elements like text are positioned correctly */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.mySlides.active, .mySlides2.active, .mySlides3.active{
+    display: block;
+    transform: translate(0);
+}
+
+.prev, .next , .prev2, .next2 , .prev3, .next3{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 10;
+}
+
+.next, .next2, .next3{
+    right: 0;
+    transform: translateX(50px);
+}
+
+.prev, .prev2, .prev3{
+    left: 0;
+    transform: translateX(-50px);
+}
+
+.prev:hover, .next:hover, .prev2:hover, .next2:hover, .prev3:hover, .next3:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(214, 213, 213);
+    background-color: purple;
+    font-size: 16px;
+    font-family: "Rubik One", sans-serif;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid rgb(214, 213, 213);
+    text-align: center;
+    z-index: 1;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot, .dot2, .dot3{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 70px;
+}
+
+.active, .dot:hover, .dot2:hover, .dot3:hover{
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.mySlides img, .mySlides2 img, .mySlides3 img{
+    width: 100%; /* Keep the width dynamic to fit the container */
+    height: 200px;
+    object-fit: cover; /* Ensure the image is cropped to fit without distortion */
+    border-radius: 18px; /* Rounded corners for images */
+    border: 3px solid purple; /* Add a border around the image */
+}
+
+.mySlides h3, .mySlides2 h3, .mySlides3 h3{
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Rubik One", sans-serif;
+    width: fit-content;
+    padding: 5px;
+    margin-top: 0 auto;
+    font-weight: lighter;
+    transform: translateY(-4px);
+    background-color: purple;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: rgb(214, 213, 213);
+}
+
+.slideshow-container .mySlides img, .slideshow-container .mySlides2 img, .slideshow-container .mySlides3 img{
+    border-radius: 20px; /* Makes the image rounded */
+    border: 5px solid purple; /* Decent border styling */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for a polished look */
+    height: 500px;
+}
+
+.slideshow-container .mySlides h3, .slideshow-container .mySlides2 h3, .slideshow-container .mySlides3 h3{
+    margin: 0;
+    font-size: 24px;
+    font-family: "Rubik One", sans-serif;
+    width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+    font-weight: lighter;
+    transform: translateY(4px);
+    background-color: purple;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: rgb(214, 213, 213);
+}
