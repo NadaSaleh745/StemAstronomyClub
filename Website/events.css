@@ -155,6 +155,12 @@ body{
     }
 }
 
+@media (max-width:1100px){
+    .prev1, .prev2, .prev3, .next1, .next2, .next3{
+        display: none;
+    }
+}
+
 /****************************************************/
 
 /****************************************************/
@@ -342,14 +348,14 @@ body{
     font-weight: 400;
 }
 
-.slides-wrapper, .slides-wrapper2, .slides-wrapper3{
+.slides-wrapper1, .slides-wrapper2, .slides-wrapper3{
     align-items: center;
     display: flex;
     width: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
-.mySlides, .mySlides2, .mySlides3{
+.mySlides1, .mySlides2, .mySlides3{
     min-width: 100%;
     position: relative; /* Ensure child elements like text are positioned correctly */
     width: 100%;
@@ -357,12 +363,12 @@ body{
     object-fit: cover;
 }
 
-.mySlides.active, .mySlides2.active, .mySlides3.active{
+.mySlides1.active, .mySlides2.active, .mySlides3.active{
     display: block;
     transform: translate(0);
 }
 
-.prev, .next , .prev2, .next2 , .prev3, .next3{
+.prev1, .next1 , .prev2, .next2 , .prev3, .next3{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -378,17 +384,17 @@ body{
     z-index: 10;
 }
 
-.next, .next2, .next3{
+.next1, .next2, .next3{
     right: 0;
     transform: translateX(50px);
 }
 
-.prev, .prev2, .prev3{
+.prev1, .prev2, .prev3{
     left: 0;
     transform: translateX(-50px);
 }
 
-.prev:hover, .next:hover, .prev2:hover, .next2:hover, .prev3:hover, .next3:hover{
+.prev1:hover, .next1:hover, .prev2:hover, .next2:hover, .prev3:hover, .next3:hover{
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -416,7 +422,7 @@ body{
     top: 0;
 }
 
-.dot, .dot2, .dot3{
+.dot1, .dot2, .dot3{
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -428,7 +434,7 @@ body{
     margin-bottom: 70px;
 }
 
-.active, .dot:hover, .dot2:hover, .dot3:hover{
+.active, .dot1:hover, .dot2:hover, .dot3:hover{
     background-color: #717171;
 }
 
@@ -442,7 +448,7 @@ body{
     to {opacity: 1}
 }
 
-.mySlides img, .mySlides2 img, .mySlides3 img{
+.mySlides1 img, .mySlides2 img, .mySlides3 img{
     width: 100%; /* Keep the width dynamic to fit the container */
     height: 200px;
     object-fit: cover; /* Ensure the image is cropped to fit without distortion */
@@ -450,7 +456,7 @@ body{
     border: 3px solid purple; /* Add a border around the image */
 }
 
-.mySlides h3, .mySlides2 h3, .mySlides3 h3{
+.mySlides1 h3, .mySlides2 h3, .mySlides3 h3{
     text-align: center;
     margin: 0;
     font-size: 14px;
@@ -466,14 +472,14 @@ body{
     color: rgb(214, 213, 213);
 }
 
-.slideshow-container .mySlides img, .slideshow-container .mySlides2 img, .slideshow-container .mySlides3 img{
+.slideshow-container .mySlides1 img, .slideshow-container .mySlides2 img, .slideshow-container .mySlides3 img{
     border-radius: 20px; /* Makes the image rounded */
     border: 5px solid purple; /* Decent border styling */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for a polished look */
     height: 500px;
 }
 
-.slideshow-container .mySlides h3, .slideshow-container .mySlides2 h3, .slideshow-container .mySlides3 h3{
+.slideshow-container .mySlides1 h3, .slideshow-container .mySlides2 h3, .slideshow-container .mySlides3 h3{
     margin: 0;
     font-size: 24px;
     font-family: "Rubik One", sans-serif;

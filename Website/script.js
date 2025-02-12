@@ -21,70 +21,112 @@ function home() {
 logo.addEventListener('click', home);
 
 
-let slideIndex = 0; // Current slide index
-const slidesWrapper = document.querySelector('.slides-wrapper');
-const slides = document.querySelectorAll('.mySlides');
-const dots = document.querySelectorAll('.dot');
-const totalSlides = slides.length;
+let slideIndex1 = 0; // Current slide index
+let startX1 = 0;
+let endX1 = 0;
+const slidesWrapper1 = document.querySelector('.slides-wrapper1');
+const slides1 = document.querySelectorAll('.mySlides1');
+const dots1 = document.querySelectorAll('.dot1');
+const totalSlides1 = slides1.length;
 
-function showSlides(index) {
+slidesWrapper1.addEventListener("touchstart", (e) => {
+    startX1 = e.touches[0].clientX;
+});
+
+slidesWrapper1.addEventListener("touchend", (e) => {
+    endX1 = e.changedTouches[0].clientX;
+    handleSwipe1();
+});
+
+function handleSwipe1() {
+    if (startX1 - endX1 > 50) {
+        // Swiped left → Move to the next slide
+        plusSlides1(1);
+    } else if (endX1 - startX1 > 50) {
+        // Swiped right → Move to the previous slide
+        plusSlides1(-1);
+    }
+}
+
+function showSlides1(index) {
     // Adjust index for infinite looping
-    if (index >= totalSlides) {
-        slideIndex = 0; // Go back to the first slide
+    if (index >= totalSlides1) {
+        slideIndex1 = 0; // Go back to the first slide
     } else if (index < 0) {
-        slideIndex = totalSlides - 1; // Go to the last slide
+        slideIndex1 = totalSlides1 - 1; // Go to the last slide
     } else {
-        slideIndex = index;
+        slideIndex1 = index;
     }
 
     // Apply transform to shift the slides
-    const offset = -slideIndex * 100; // Calculate percentage offset
-    slidesWrapper.style.transform = `translateX(${offset}%)`;
+    const offset1 = -slideIndex1 * 100; // Calculate percentage offset
+    slidesWrapper1.style.transform = `translateX(${offset1}%)`;
 
     // Update the active dot
-    updateDots();
+    updateDots1();
 }
 
-function plusSlides(n) {
-    showSlides(slideIndex + n); // Move to next/previous slide
+function plusSlides1(n) {
+    showSlides1(slideIndex1 + n); // Move to next/previous slide
 }
 
-function currentSlide(n) {
-    showSlides(n); // Show the slide at the specific index
+function currentSlide1(n) {
+    showSlides1(n); // Show the slide at the specific index
 }
 
-function updateDots() {
+function updateDots1() {
     // Remove active class from all dots
-    dots.forEach(dot => dot.classList.remove("active"));
+    dots1.forEach(dot => dot.classList.remove("active"));
 
     // Add active class to the current dot
-    dots[slideIndex].classList.add("active");
+    dots1[slideIndex1].classList.add("active");
 }
 
 // Initially show the first slide
-showSlides(slideIndex);
+showSlides1(slideIndex1);
 
 // Event listeners for arrows
-document.querySelector(".prev").addEventListener("click", function() {
-    plusSlides(0);
+document.querySelector(".prev1").addEventListener("click", function() {
+    plusSlides1(0);
 });
 
-document.querySelector(".next").addEventListener("click", function() {
-    plusSlides(0);
+document.querySelector(".next1").addEventListener("click", function() {
+    plusSlides1(0);
 });
 
 // Event listeners for dots
-dots.forEach((dot, index) => {
+dots1.forEach((dot, index) => {
     dot.addEventListener("click", () => {
-        currentSlide(index);
+        currentSlide1(index);
     });
 });
 
 let slideIndex2 = 0; // Current slide index
+let startX2 = 0;
+let endX2 = 0;
 const slidesWrapper2 = document.querySelector('.slides-wrapper2');
 const slides2 = document.querySelectorAll('.mySlides2');
 const dots2 = document.querySelectorAll('.dot2');
 const totalSlides2 = slides2.length;
+
+slidesWrapper2.addEventListener("touchstart", (e) => {
+    startX2 = e.touches[0].clientX;
+});
+
+slidesWrapper2.addEventListener("touchend", (e) => {
+    endX2 = e.changedTouches[0].clientX;
+    handleSwipe2();
+});
+
+function handleSwipe2() {
+    if (startX2 - endX2 > 50) {
+        // Swiped left → Move to the next slide
+        plusSlides2(1);
+    } else if (endX2 - startX2 > 50) {
+        // Swiped right → Move to the previous slide
+        plusSlides2(-1);
+    }
+}
 
 function showSlides2(index) {
     // Adjust index for infinite looping
@@ -97,8 +139,8 @@ function showSlides2(index) {
     }
 
     // Apply transform to shift the slides
-    const offset = -slideIndex2 * 100; // Calculate percentage offset
-    slidesWrapper2.style.transform = `translateX(${offset}%)`;
+    const offset2 = -slideIndex2 * 100; // Calculate percentage offset
+    slidesWrapper2.style.transform = `translateX(${offset2}%)`;
 
     // Update the active dot
     updateDots2();
@@ -140,10 +182,32 @@ dots2.forEach((dot, index) => {
 });
 
 let slideIndex3 = 0; // Current slide index
+let startX3 = 0;
+let endX3 = 0;
 const slidesWrapper3 = document.querySelector('.slides-wrapper3');
 const slides3 = document.querySelectorAll('.mySlides3');
 const dots3 = document.querySelectorAll('.dot3');
 const totalSlides3 = slides3.length;
+
+slidesWrapper3.addEventListener("touchstart", (e) => {
+    startX3 = e.touches[0].clientX;
+});
+
+slidesWrapper3.addEventListener("touchend", (e) => {
+    endX3 = e.changedTouches[0].clientX;
+    handleSwipe3();
+});
+
+function handleSwipe3() {
+    if (startX3 - endX3 > 50) {
+        // Swiped left → Move to the next slide
+        plusSlides3(1);
+    } else if (endX3 - startX3 > 50) {
+        // Swiped right → Move to the previous slide
+        plusSlides3(-1);
+    }
+}
+
 
 function showSlides3(index) {
     // Adjust index for infinite looping
@@ -156,8 +220,8 @@ function showSlides3(index) {
     }
 
     // Apply transform to shift the slides
-    const offset = -slideIndex3 * 100; // Calculate percentage offset
-    slidesWrapper3.style.transform = `translateX(${offset}%)`;
+    const offset3 = -slideIndex3 * 100; // Calculate percentage offset
+    slidesWrapper3.style.transform = `translateX(${offset3}%)`;
 
     // Update the active dot
     updateDots3();
