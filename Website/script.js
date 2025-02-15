@@ -3,6 +3,36 @@ const list = document.getElementById("list");
 const back = document.getElementById("back");
 const logo = document.getElementById("logo");
 
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("joinUsModal");
+    const joinBtn = document.querySelector(".joinUS");
+    const closeBtn = document.querySelector(".close");
+
+    joinBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        modal.style.display = "flex";
+        setTimeout(() => modal.classList.add("active"), 10);
+    });
+
+    closeBtn.addEventListener("click", function () {
+        modal.classList.add("closing");
+        setTimeout(() => {
+            modal.classList.remove("active", "closing");
+            modal.style.display = "none";
+        }, 500);
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.classList.add("closing");
+            setTimeout(() => {
+                modal.classList.remove("active", "closing");
+                modal.style.display = "none";
+            }, 500);
+        }
+    });
+});
+
 function drop() {
     if(menu.style.height === "0px") {
         menu.style.height = '300px';

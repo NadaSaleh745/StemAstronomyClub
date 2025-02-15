@@ -237,15 +237,20 @@ body{
     color: white;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     flex-wrap: wrap-reverse;
     align-items: flex-end;
+
 }
 
 .f-container img {
     width: 350px;
     height: 350px;
     border-radius: 18px;
+}
+
+.f-container:nth-of-type(even) {
+    flex-direction: row-reverse;
 }
 
 .txt {
@@ -261,6 +266,13 @@ body{
     font-family: 'Rubik One', sans-serif;
     font-weight: 400;
     font-size: 30px;
+    margin: 0;
+}
+
+.txt h3 {
+    font-family: 'Rubik One', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
     margin: 0;
 }
 
