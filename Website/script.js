@@ -46,7 +46,7 @@ function drop() {
 list.addEventListener('click', drop);
 
 function home() {
-    window.location.href = "home.html";
+    window.location.href = "index.html";
 }
 logo.addEventListener('click', home);
 

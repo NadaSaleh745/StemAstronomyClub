@@ -4,6 +4,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const dots = document.querySelectorAll('.dot');
     const totalSlides = slides.length;
     let slideIndex = 0;
+    let startX = 0;
+    let endX = 0;
+
+    slidesWrapper.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    slidesWrapper.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (startX - endX > 50) {
+            nextSlide();
+        } else if (endX - startX > 50) {
+            prevSlide();
+        }
+    }
 
     function showSlides(index) {
         if (index >= totalSlides) {
@@ -18,13 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
         updateDots();
     }
 
-    function currentSlide(n) {
-        showSlides(n);
-    }
-
     function updateDots() {
         dots.forEach(dot => dot.classList.remove("active"));
-        dots[slideIndex].classList.add("active");
+        if (dots[slideIndex]) dots[slideIndex].classList.add("active");
     }
 
     function nextSlide() {
@@ -37,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     dots.forEach((dot, index) => {
         dot.addEventListener("click", () => {
-            currentSlide(index);
+            showSlides(index);
         });
     });
 
