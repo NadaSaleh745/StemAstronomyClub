@@ -562,6 +562,96 @@ a.gradient-link:hover {
 
 /****************************************************/
 
+.modal {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1000;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    background: linear-gradient(208.75deg, rgba(160, 97, 181, 1) 0%, rgba(0, 102, 204, 1) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal.active .modal-content {
+    transform: translateY(0); /* Moves down smoothly */
+    opacity: 1;
+}
+
+.modal.closing {
+    opacity: 0;
+}
+
+.modal.closing .modal-content {
+    transform: translateY(-50px); /* Moves up when closing */
+    opacity: 0;
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 0 10px 0 10px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.close:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h2{
+    max-width: 800px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 32.68px;
+    text-align: center;
+    color: #DADCE4;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+
+/****************************************************/
+
 .wad-header {
     font-family: "Rubik One", sans-serif;
     font-size: 48px;
