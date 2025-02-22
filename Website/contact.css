@@ -29,6 +29,8 @@ body{
     flex: 1;
 }
 
+
+
 .back {
     position: fixed;
     top: 0;
@@ -193,7 +195,8 @@ body{
     background-color: #4D4D4D47;
     border-radius: 20px;
     padding: 30px;
-    margin-bottom: 150px;
+    margin-top: -75px;
+    margin-bottom: 95px;
 }
 
 .get-in-touch h2 {
