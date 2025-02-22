@@ -219,7 +219,7 @@ body{
     border-radius: 18px;
 }
 
-.f-container:nth-of-type(even) {
+.f-container:nth-of-type(odd) {
     flex-direction: row-reverse;
 }
 
