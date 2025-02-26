@@ -469,44 +469,98 @@ body{
 /****************************************************/
 
 @media (max-width: 1200px) {
-
     .m1-text {
         width: 90%;
     }
 }
 
-@media (max-width: 600px) {
-
-    .press a {
-        width: 48%;
-        font-size: 22px;
+@media (max-width: 900px) {
+    .m1-header {
+        font-size: 34px;
     }
 
-    .m1-image {
-        width: 350px;
-        height: 350px;
+    .m1-text {
+        font-size: 20px;
+        gap: 30px;
+    }
+
+    .m1-text p {
+        line-height: 32px;
+    }
+
+    .title-highlight {
+        font-size: 24px;
+    }
+
+    .press a {
+        width: 200px;
+        height: 60px;
+        font-size: 22px;
+        padding-top: 15px;
     }
 }
 
-@media  (max-width: 500px) {
+@media (max-width: 600px) {
+    .m1-header {
+        font-size: 30px;
+    }
 
-    .press a {
+    .m1-text {
         font-size: 16px;
     }
+
+    .m1-text p {
+        line-height: 28px;
+    }
+
+    .title-highlight {
+        font-size: 22px;
+    }
+
+    .press {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .press a {
+        width: 80%;
+        height: 55px;
+        font-size: 20px;
+        padding-top: 12px;
+    }
+
     .m1-image {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
 }
 
 @media (max-width: 400px) {
+    .m1-header {
+        font-size: 26px;
+    }
+
+    .m1-text {
+        font-size: 18px;
+    }
+
+    .title-highlight {
+        font-size: 20px;
+    }
+
+    .press a {
+        width: 90%;
+        font-size: 18px;
+        height: 50px;
+        padding-top: 10px;
+    }
 
     .m1-image {
         width: 250px;
         height: 250px;
     }
-
 }
+
 
 /****************************************************/
 
@@ -606,15 +660,60 @@ a.gradient-link:hover {
 
 /****************************************************/
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
+    .competition-section {
+        padding: 50px 20px;
+    }
 
     .competition-section h2 {
-        font-size: 40px;
-    }
-    .competition-text {
-        font-size: 20px;
+        font-size: 42px;
+        line-height: 55px;
     }
 
+    .competition-text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .competition-section h2 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .competition-text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .competition-section {
+        padding: 40px 15px;
+    }
+
+    .competition-section h2 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .competition-text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 360px) {
+    .competition-section h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .competition-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 /****************************************************/
@@ -709,6 +808,47 @@ a.gradient-link:hover {
 
 /****************************************************/
 
+@media (max-width: 1000px) {
+    .modal-content {
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .modal-content h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .modal-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .modal-content p {
+        font-size: 16px;
+    }
+
+    .close {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+/****************************************************/
+
 .wad-header {
     font-family: "Rubik One", sans-serif;
     font-size: 48px;
@@ -789,11 +929,134 @@ a.gradient-link:hover {
 }
 
 /****************************************************/
+/* Responsive Adjustments */
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
+    .wad-header {
+        font-size: 42px;
+    }
+
     .wad-cards {
         justify-content: center;
-        gap: 30px;
+        gap: 25px;
+    }
+
+    .wad-card {
+        width: 320px;
+        padding-top: 40px;
+    }
+
+    .wad-card h1 {
+        font-size: 28px;
+    }
+
+    .wad-card p {
+        font-size: 20px;
+    }
+
+    .wad-card a {
+        width: 220px;
+        height: 65px;
+        font-size: 20px;
+    }
+
+    .cover {
+        width: 226px;
+        height: 71px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wad-header {
+        font-size: 36px;
+    }
+
+    .wad-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .wad-card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .wad-card h1 {
+        font-size: 26px;
+    }
+
+    .wad-card p {
+        font-size: 18px;
+    }
+
+    .wad-card a {
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .cover {
+        width: 206px;
+        height: 66px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wad-header {
+        font-size: 32px;
+    }
+
+    .wad-card {
+        padding-top: 30px;
+    }
+
+    .wad-card h1 {
+        font-size: 24px;
+    }
+
+    .wad-card p {
+        font-size: 16px;
+    }
+
+    .wad-card a {
+        width: 180px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .cover {
+        width: 186px;
+        height: 61px;
+    }
+}
+
+@media (max-width: 360px) {
+    .wad-header {
+        font-size: 28px;
+    }
+
+    .wad-card {
+        padding-top: 25px;
+    }
+
+    .wad-card h1 {
+        font-size: 22px;
+    }
+
+    .wad-card p {
+        font-size: 14px;
+    }
+
+    .wad-card a {
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .cover {
+        width: 166px;
+        height: 56px;
     }
 }
 
@@ -1116,8 +1379,19 @@ a.gradient-link:hover {
     justify-content: center;
     align-items: center;
     margin-top: 100px; /* Adjusted spacing */
-
 }
+
+.links2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.4;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
 
 .links2 a:hover {
     background-color: #5b82bc;
@@ -1131,9 +1405,6 @@ a.gradient-link:hover {
     margin-top: -73px;
     border-radius: 14px;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .slide-content {
@@ -1229,73 +1500,85 @@ a.gradient-link:hover {
     background-color: #717171;
 }
 
-@media screen and (max-width: 1024px) {
-    .slider-container {
-        width: 90vw;
-    }
-    
-    .slide {
-        flex-direction: column;
+@media (max-width: 1024px) {
+    .title2{
+        font-size: 38px;
     }
 
-    .details {
+    .slider-container {
         width: 90%;
+        border-radius: 20px;
     }
 
     .imgDiv {
-        width: 90%;
+        width: 70%;
     }
+
+    .slide img {
+        width: 100%;
+        max-width: 400px;
+    }
+
     .nav-button-prev, .nav-button-next {
         display: none;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .slider-container {
-        width: 95vw;
-        border-radius: 20px;
-        align-items: center;
+@media (max-width: 768px) {
+    .title2{
+        font-size: 32px;
     }
-    
+
+    .slider-container {
+        width: 95%;
+        border-radius: 15px;
+    }
+
+    .slide-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .imgDiv {
+        width: 90%;
+    }
+
+    .slide img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .details {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
     .slide-title {
         font-size: 20px;
     }
 
-    .slide a{
-        font-size: 12px;
-    }
-
-    .dot {
-        height: 10px;
-        width: 10px;
-    }
-
-    .slide-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .slide img {
-        width: 60%;
-        max-width: 250px;
-        height: auto;
+    .slide p {
+        font-size: 14px;
     }
 
     .links2{
-        margin-top: 50px;
+        left: 30%;
+    }
+
+    .dot {
+        height: 12px;
+        width: 12px;
+        margin-bottom: 50px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .slider-container {
-        width: 100%;
-    }
-
-    .slide {
-        padding: 10px;
+        width: 95%;
+        margin: 20px auto;
     }
 
     .slide-title {
@@ -1303,6 +1586,12 @@ a.gradient-link:hover {
     }
 
     .slide p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+    
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin-bottom: 30px;
     }
 }

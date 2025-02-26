@@ -461,3 +461,94 @@ label::after {
 }
 
 /****************************************************/
+
+/* General Responsiveness */
+@media only screen and (max-width: 1200px) {
+    .faq-container {
+        width: 80%;
+    }
+    .get-in-touch {
+        max-width: 100%;
+        padding: 20px;
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .big {
+        font-size: 40px;
+        margin: 120px 0 100px 0;
+    }
+    .get-in-touch h2 {
+        font-size: 36px;
+    }
+    .get-in-touch p {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .faq-header {
+        font-size: 40px;
+    }
+    label {
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .big {
+        font-size: 34px;
+        margin: 100px 0 80px 0;
+    }
+    .get-in-touch h2 {
+        font-size: 32px;
+    }
+    .get-in-touch p {
+        font-size: 20px;
+    }
+    .faq-container {
+        width: 90%;
+    }
+    .faq-header {
+        font-size: 36px;
+    }
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-text-pair {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .big {
+        font-size: 28px;
+    }
+    .get-in-touch {
+        padding: 15px;
+    }
+    .get-in-touch h2 {
+        font-size: 28px;
+    }
+    .get-in-touch p {
+        font-size: 18px;
+        width: 100%;
+    }
+    .faq-header {
+        font-size: 32px;
+    }
+    label {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+    .answer {
+        font-size: 16px;
+    }
+    label::after {
+        width: 24px;
+        height: 24px;
+        top: 15px;
+        right: 20px;
+    }
+}

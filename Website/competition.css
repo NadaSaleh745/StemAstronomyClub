@@ -199,6 +199,55 @@ body{
 }
 
 /****************************************************/
+@media only screen and (max-width: 1024px) {
+    .coming-soon {
+        margin: 120px auto 80px auto;
+        padding: 40px;
+    }
+
+    .coming-soon h1 {
+        font-size: 32px;
+    }
+
+    .coming-soon p {
+        width: 90%;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .coming-soon {
+        margin: 100px auto 60px auto;
+        padding: 35px;
+    }
+
+    .coming-soon h1 {
+        font-size: 28px;
+    }
+
+    .coming-soon p {
+        width: 95%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .coming-soon {
+        margin: 80px auto 40px auto;
+        padding: 30px;
+    }
+
+    .coming-soon h1 {
+        font-size: 24px;
+    }
+
+    .coming-soon p {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/****************************************************/
 
 .footer{
     margin-top: auto;
