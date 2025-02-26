@@ -113,6 +113,11 @@ body{
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .menu a {
@@ -126,6 +131,7 @@ body{
     cursor: pointer;
     width: 100%;
     color: white;
+    z-index: 10;
 }
 
 .menu a:hover {
