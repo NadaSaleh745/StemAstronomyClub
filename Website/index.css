@@ -411,7 +411,7 @@ body{
     font-family: "Rubik One", sans-serif;
     font-weight: 400;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .m1-text {
@@ -428,14 +428,21 @@ body{
     line-height: 2;
     text-align: center;
     margin: 0;
-    font-weight: 400;
-    line-height: 38.13px;
+    font-weight: 500;
+    font-size: 20px;
     color: #DADCE4;
+    line-height: 1.6;
 }
 
 .title-highlight{
     font-size: 26px;
-    font-weight: bold;
+    font-weight: 500;
+    opacity: 95%;
+    background: linear-gradient(90deg, #6095ce 0%, #9a79b9 48.5%, #a4a3e4 100%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    color: transparent;
 }
 
 .buttons2 {
