@@ -340,6 +340,63 @@ body{
 
 /****************************************************/
 
+@media (max-width: 1000px) {
+    .about-us .about-us-text p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .stats {
+        width: 90%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .stat h3 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .stat p {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .about-us {
+        padding: 15px 30px;
+    }
+
+    .about-us .about-us-text p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .stats {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .stat {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .stat h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .stat p {
+        font-size: 18px;
+    }
+}
+
+/****************************************************/
+
 .m1-container {
     display: flex;
     justify-content: center;
@@ -541,7 +598,7 @@ a.gradient-link {
 }
 
 a.gradient-link:hover {
-    background: linear-gradient(180deg, #42A0FF 82.12%, #E28CFF 95.76%); /* Reverse gradient on hover */
+    background: linear-gradient(180deg, #42A0FF 82.12%, #E28CFF 95.76%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1061,6 +1118,11 @@ a.gradient-link:hover {
     margin-top: 100px; /* Adjusted spacing */
 
 }
+
+.links2 a:hover {
+    background-color: #5b82bc;
+}
+
 
 .cover2{
     width: 42.028%;

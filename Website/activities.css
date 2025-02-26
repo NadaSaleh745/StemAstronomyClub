@@ -258,7 +258,7 @@ body{
     height: 280px;
     justify-content: space-evenly;
     position: relative;
-    margin-top: 200px;
+    margin-top: auto;
 }
 
 .contact {

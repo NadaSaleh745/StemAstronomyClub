@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function drop() {
     if(menu.style.height === "0px") {
-        menu.style.height = '300px';
+        menu.style.height = '360px';
         back.style.borderBottom = '1px solid rgb(255, 255, 255, 0.3)';
     }
     else {
