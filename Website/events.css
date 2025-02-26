@@ -474,7 +474,7 @@ body{
 
 .slideshow-container .mySlides1 img, .slideshow-container .mySlides2 img, .slideshow-container .mySlides3 img{
     border-radius: 20px; /* Makes the image rounded */
-    border: 3px solid purple; /* Decent border styling */
+    border: px solid purple; /* Decent border styling */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for a polished look */
     height: 500px;
 }
