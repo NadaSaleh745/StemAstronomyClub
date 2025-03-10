@@ -43,7 +43,7 @@ function drop() {
         back.style.borderBottom = 'none';
     }
 }
-list.addEventListener('click', drop);
+list.addEventListener('click', drop, { once: false });
 
 function home() {
     window.location.href = "index.html";
