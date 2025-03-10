@@ -280,7 +280,7 @@ body{
         max-width: 300px;
         height: auto;
     }
-    
+
     .txt a {
         width: 70%;
         max-width: 250px;
@@ -345,6 +345,37 @@ body{
     height: fit-content;
     margin-bottom: 70px;
 }
+
+/****************************************************/
+
+@media (max-width: 1024px) {
+    .board-header {
+        font-size: 38px;
+    }
+}
+
+/* For smaller tablets & large phones */
+@media (max-width: 768px) {
+    .board-header {
+        font-size: 32px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .board-header {
+        font-size: 28px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 360px) {
+    .board-header {
+        font-size: 24px;
+    }
+}
+
+/****************************************************/
 
 .board {
     display: flex;
@@ -467,6 +498,7 @@ body{
 }
 
 /****************************************************/
+
 
 @media (max-width: 1365px) {
 

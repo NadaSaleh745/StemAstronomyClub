@@ -45,6 +45,14 @@ function drop() {
 }
 list.addEventListener('click', drop, { once: false });
 
+window.addEventListener("resize", function () {
+
+    if (window.innerWidth > 1000) {
+        menu.style.height = "0";
+    }
+});
+
+
 function home() {
     window.location.href = "index.html";
 }

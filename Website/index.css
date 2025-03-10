@@ -425,6 +425,7 @@ body{
 }
 
 .m1-text p {
+    line-height: 2;
     text-align: center;
     margin: 0;
     font-weight: 500;
@@ -1447,7 +1448,7 @@ a.gradient-link:hover {
 .slide p {
     font-size: 16px;
     color: White;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin: 10px 0 20px 0;
 }
@@ -1507,6 +1508,8 @@ a.gradient-link:hover {
     background-color: #717171;
 }
 
+/*******************************************/
+
 @media (max-width: 1024px) {
     .title2{
         font-size: 38px;
@@ -1537,7 +1540,7 @@ a.gradient-link:hover {
     }
 
     .slider-container {
-        width: 95%;
+        width: 90%;
         border-radius: 15px;
     }
 
@@ -1584,7 +1587,8 @@ a.gradient-link:hover {
 
 @media (max-width: 480px) {
     .slider-container {
-        width: 95%;
+        width: 90%;
+        max-width: 320px;
         margin: 20px auto;
     }
 
